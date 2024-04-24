@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #sidebar {
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0; /* Initially visible */
+            transition: left 0.3s ease-in-out; /* Smooth transition */
+        }
+        #sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            margin-top: 10px; /* Add margin to the top of menu items */
+        }
+        #sidebar a:first-child {
+            margin-top: 0; /* Remove margin from the first menu item */
+        }
+        #sidebar a:hover {
+            background-color: #555;
+        }
+        #content {
+            margin-left: 200px; /* Adjust content area when sidebar is visible */
+            padding: 20px;
+            transition: margin-left 0.3s ease-in-out; /* Smooth transition */
+        }
+        .collapse-btn {
+            cursor: pointer;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+<button class="collapse-btn" onclick="toggleSidebar()">Collapse</button>
+
+<div id="sidebar">
+    <a href="index.html">Home</a>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+</div>
+
+<div id="content">
+    <!-- Your content here -->
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the content of your home page.</p>
+</div>
+
+<script>
+    var sidebarVisible = true;
+
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        var content = document.getElementById("content");
+        
+        if (sidebarVisible) {
+            sidebar.style.left = "-200px";
+            content.style.marginLeft = "0";
+        } else {
+            sidebar.style.left = "0";
+            content.style.marginLeft = "200px";
+        }
+        
+        sidebarVisible = !sidebarVisible;
+    }
+</script>
+
+</body>
+</html>

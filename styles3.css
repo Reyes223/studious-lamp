@@ -1,0 +1,128 @@
+/* Alien Warehouse Theme */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Futuristic font */
+    background-color: #0a0a0a; /* Dark background reminiscent of space */
+    color: #ffffff; /* White text for high contrast */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em; /* Larger font size for emphasis */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1); /* White text shadow for glow effect */
+}
+
+h3 {
+    font-size: 2em; /* Slightly smaller font size */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #26c6da; /* Cyan color reminiscent of technology */
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0097a7; /* Darker shade of cyan */
+}
+
+.list, .calculators {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #0a0a0a; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+}
+
+.calculator {
+    text-align: center;
+}
+
+.calculator label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.calculator input[type="number"] {
+    padding: 10px;
+    border: 1px solid #26c6da; /* Cyan border */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.calculator button {
+    background-color: #26c6da; /* Cyan color */
+    color: #ffffff;
+}
+
+.calculator button:hover {
+    background-color: #0097a7; /* Darker shade of cyan */
+}
+
+#netWorth {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color: #0a0a0a; /* Dark background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+}
+
+/* Additional CSS for points counter */
+#points {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#lineChart {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* CSS for theme toggle */
+.theme-container {
+    text-align: center;
+}
+
+#themeLabel {
+    font-size: 1em;
+    color: #ffffff; /* White color for label text */
+    margin-right: 10px;
+}
+
+#themeSelect {
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px;
+    background-color: #0a0a0a; /* Dark background */
+    color: #ffffff; /* White color for select text */
+}

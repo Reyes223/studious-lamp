@@ -1,0 +1,127 @@
+/* Marble Theme */
+
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333333; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em; /* Large font size for emphasis */
+}
+
+h3 {
+    font-size: 2em; /* Slightly smaller font size */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #c9c9c9; /* Light gray button color */
+    color: #333333; /* Dark gray text */
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #b0b0b0; /* Slightly darker shade of gray on hover */
+}
+
+.list, .calculators {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.calculator {
+    text-align: center;
+}
+
+.calculator label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.calculator input[type="number"] {
+    padding: 10px;
+    border: 1px solid #c9c9c9; /* Light gray border */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.calculator button {
+    background-color: #c9c9c9; /* Light gray button color */
+    color: #333333; /* Dark gray text */
+}
+
+.calculator button:hover {
+    background-color: #b0b0b0; /* Slightly darker shade of gray on hover */
+}
+
+#netWorth {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Additional CSS for points counter */
+#points {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333333; /* Dark gray background */
+    color: white; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#lineChart {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* CSS for theme toggle */
+.theme-container {
+    text-align: center;
+}
+
+#themeLabel {
+    font-size: 1em;
+    color: #333333; /* Dark gray color for label text */
+    margin-right: 10px;
+}
+
+#themeSelect {
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid #333333; /* Dark gray border */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray color for select text */
+}
